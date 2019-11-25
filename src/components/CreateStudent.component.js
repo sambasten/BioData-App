@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 
 class CreateStudent extends Component{
   constructor(props){
-      super(props);
-      this.state = {
-        student_name:"",
-        student_age:"",
-        student_address:"",
-        student_gender:"",
-        student_religion:"",
-        student_email:"",
-        student_phonenumber:"",
-        student_stateoforigin:""
-      }
+    super(props);
+    this.state = {
+      student_name:"",
+      student_age:"",
+      student_address:"",
+      student_gender:"",
+      student_religion:"",
+      student_email:"",
+      student_phonenumber:"",
+      student_stateoforigin:""
+    }
   }
 
   onChangeStudentName= (e) =>{
