@@ -13,7 +13,7 @@ const Student = props =>(
     <td>{props.student.student_phonenumber}</td>
     <td>{props.student.student_stateoforigin}</td>
     <td>
-    <Link to={'/edit/' + props.student._id}> Edit </Link>
+    <Link to={"/edit/" + props.student._id}> Edit </Link>
     </td>
   </tr>
 )
@@ -28,7 +28,8 @@ export default class StudentList extends Component{
     axios.get('http://localhost:4000/students/')
     .then(res => {this.setState({students: res.data});
     })
-    .catch((err)=>console.log(err))
+    .catch(function(err){console.log(err);
+    })
   }
 
   studentList = () => {

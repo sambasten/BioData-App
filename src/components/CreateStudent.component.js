@@ -67,7 +67,8 @@ class CreateStudent extends Component{
     student_gender : this.state.student_gender,
     student_religion : this.state.student_religion,
     student_email : this.state.student_email,
-    student_phonenumber : this.state.student_phonenumber
+    student_phonenumber : this.state.student_phonenumber,
+    student_stateoforigin: this.state.student_stateoforigin
   };
 
   axios.post('http://localhost:4000/students/add', newStudent)
