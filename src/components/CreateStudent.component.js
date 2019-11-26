@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class CreateStudent extends Component{
   constructor(props){
@@ -58,6 +59,19 @@ class CreateStudent extends Component{
   console.log(`Student Email: ${this.state.student_email}`);
   console.log(`Student Phone Number: ${this.state.student_phonenumber}`);
   console.log(`Student State of Origin: ${this.state.student_stateoforigin}`);
+
+  const newStudent  = {
+    student_name : this.state.student_name,
+    student_age : this.state.student_age,
+    student_address : this.state.student_address,
+    student_gender : this.state.student_gender,
+    student_religion : this.state.student_religion,
+    student_email : this.state.student_email,
+    student_phonenumber : this.state.student_phonenumber
+  };
+
+  axios.post('http://localhost:4000/students/add', newStudent)
+  .then(res => console.log(res.data));
 
   this.setState({
     student_name:"",
