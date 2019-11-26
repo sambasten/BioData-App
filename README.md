@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# BioData-App
+This application is can take the personal details of all students registered for a web development training and store them in a database. Its supports the capability to create student, edit student info and delete student info.
+>>>>>>> 008d18979f21e44c13abb8535818e51315a24b87
